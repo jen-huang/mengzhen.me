@@ -7,7 +7,7 @@ if(!isset($_POST['name']) || !isset($_POST['email']) || !isset($_POST['message']
 
 require '../vendor/autoload.php';
 
-$sendgrid = new SendGrid('XXX', 'XXX');
+$sendgrid = new SendGrid('xxx', 'xxx');
 $email = new SendGrid\Email();
 $email->
     addTo('its.jenetic@gmail.com')->
@@ -20,11 +20,9 @@ try {
         http_response_code(200);
     else
         http_response_code(500);
-    echo 'test';
     die();
 } catch(Exception $e) {
     http_response_code(500);
-    echo 'test2';
     die();
 }
 
