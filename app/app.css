@@ -1,0 +1,159 @@
+@import url(//fonts.googleapis.com/css?family=Inconsolata:400,700);
+@import url(//fonts.googleapis.com/css?family=Lobster);
+
+html, body {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #eee;
+}
+body, input, textarea, button {
+  font: 14px/16px "Inconsolata", Menlo, Courier New, Courier, Mono, monospace;
+  color: #333;
+}
+a {
+  text-decoration: none;
+}
+hr {
+  display:block;
+  height: 1px;
+  border: 0;   
+  margin: 1em auto;
+  padding: 0;
+  width: 50%;
+}
+hr:before {
+  content: "* // *";
+  display: block;
+  text-align: center;
+  color: #ccc;
+}
+#container {
+  width: 75%;
+  min-width: 320px;
+  margin: 1em auto;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 1px 0px #ccc;
+  -moz-box-shadow: 0px 0px 1px 0px #ccc;
+  box-shadow: 0px 0px 1px 0px #ccc;
+}
+nav, #footer {
+  background: #b3ee3a;
+  padding: .5em 0;
+}
+#header {
+  font: 2em/1.5em 'Lobster', cursive;
+  color: #fff;
+  text-align: center;
+}
+#footer {
+  font-size: .9em;
+  color: #fff;
+  text-align: center;
+}
+#menu {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+#menu li {
+  display: inline;
+}
+#menu li:after {
+  content: " / ";
+  color: #ddff96;
+}
+#menu li:last-child:after {
+  content: none;
+}
+#menu li a {
+  color: #666;
+}
+#menu li a:hover {
+  color: #f3ffdb;
+}
+#content {
+  padding: 1em;
+}
+#content h2 {
+  font: 1.25em/1em 'Lobster', cursive;
+  color: #666;
+}
+#content h2 .fa {
+  padding-right: .5em;
+}
+#content a {
+  color: #666;
+  border-bottom: 1px dotted;
+}
+#content a:hover {
+  color: #333;
+  border-color: #b3ee3a;
+}
+#content ul {
+  margin: 0;
+}
+#content ul li {
+  line-height: 1.25em;
+}
+#content p + ul {
+  margin-top: -.5em;
+}
+#content form[name=contact] .input {
+  margin: .5em 0;
+}
+#content form[name=contact] button,
+#content form[name=contact] textarea,
+#content form[name=contact] input {
+  padding: .5em;
+  margin: 0;
+  max-width: 100%;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+#content form[name=contact] button:focus,
+#content form[name=contact] textarea:focus,
+#content form[name=contact] input:focus{
+  outline: none;
+  border: 1px solid #aaa;
+}
+#content form[name=contact] .ng-dirty.ng-invalid {
+  border: 1px solid #a94442;
+}
+#content form[name=contact] .name,
+#content form[name=contact] .email {
+  display: inline-block;
+}
+#content form[name=contact] input {
+  width: 11em;
+}
+#content form[name=contact] textarea {
+  height: 10em;
+  width: 22.5em;
+}
+#content form[name=contact] .submit,
+#content form[name=contact] button {
+  width: 22.5em;
+  max-width: 100%;
+}
+#content form[name=contact] button {
+  background-color: #b3ee3a;
+  border: 0;
+}
+#content form[name=contact] button:focus {
+  border: 0;
+}
+#content form[name=contact] button[disabled] {
+  background-color: #ddd;
+}
+@media (min-width: 992px) {
+  #container {
+    width: 50%;
+  }
+}

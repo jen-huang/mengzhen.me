@@ -1,0 +1,12 @@
+logs/*
+!.gitkeep
+node_modules/
+bower_components/
+tmp
+.DS_Store
+.idea
+.c9/
+vendor/
+e2e-tests/
+.jshintrc
+.travis.yml
