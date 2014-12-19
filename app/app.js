@@ -21,6 +21,7 @@ angular.module('myApp', [
     .otherwise({redirectTo: '/about'});
 }])
 .controller('AppCtrl', function($scope) {
+  $scope.age = (new Date(Date.now() - 712368000000)).getUTCFullYear() - 1970;
 })
 .controller('ContactCtrl', function($scope, $http) {
   $scope.data = {};
