@@ -20,6 +20,9 @@ angular.module('myApp', [
     })
     .otherwise({redirectTo: '/about'});
 }])
+.controller('FooterCtrl', function($scope) {
+  $scope.year = new Date().getFullYear();
+})
 .controller('AppCtrl', function($scope) {
   $scope.age = (new Date(Date.now() - 712368000000)).getUTCFullYear() - 1970;
 })
