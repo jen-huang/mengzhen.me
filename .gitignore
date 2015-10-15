@@ -10,3 +10,5 @@ vendor/
 e2e-tests/
 .jshintrc
 .travis.yml
+www
+composer.lock
