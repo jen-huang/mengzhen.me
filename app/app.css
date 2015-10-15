@@ -11,12 +11,16 @@ html, body {
 body {
   background: #eee;
 }
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
 body, input, textarea, button {
   font: 14px/16px "Inconsolata", Menlo, Courier New, Courier, Mono, monospace;
   color: #333;
 }
-a {
+a, a:active, a:focus, a:hover {
   text-decoration: none;
+  outline: none;
 }
 hr {
   display:block;
