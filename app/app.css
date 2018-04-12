@@ -156,6 +156,15 @@ nav, #footer {
 #content form[name=contact] button[disabled] {
   background-color: #ddd;
 }
+.image {
+  float: left;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.image img {
+  height: 105px;
+}
 @media (min-width: 992px) {
   #container {
     width: 50%;
